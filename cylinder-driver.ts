@@ -3,11 +3,11 @@ namespace CylinderDriver {
     export const durationToHomeCylinder: number = 10e3; // microseconds
 
     export const enum CylindersEnum {
-        //% block="ブーム"
+        //% block="バケット"
         Boom,
         //% block="アーム"
         Arm,
-        //% block="バケット"
+        //% block="ブーム"
         Bucket
     };
 
