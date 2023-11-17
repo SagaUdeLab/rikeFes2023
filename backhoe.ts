@@ -3,7 +3,7 @@
  * micro:bitでMSD700のバックホウアタッチメントを制御します
  */
 //% weight=200 color=#ff8c00 icon="\uf085" block="リケフェス2023"
-//% groups=["バケット", "アーム", "ブーム", "特殊", "others"]
+//% groups=["ブーム", "アーム", "バケット", "特殊", "others"]
 namespace rikeFes_Workshop_Backhoe {
 
     let isCylindersMoving: boolean = false;
@@ -77,11 +77,11 @@ namespace rikeFes_Workshop_Backhoe {
     }
 
     /**
-      * バケットを指定された時間、上げます。
+      * ブームを指定された時間、上げます。
       * @param duration 動かしたい時間
     */
-    //% block="バケットを$duration秒間あげる"
-    //% group="バケット"
+    //% block="ブームを$duration秒間あげる"
+    //% group="ブーム"
     //% duration.min=0 duration.max=15 duration.defl=5
     export function extendBoomCylinder(duration: number): void {
         let startTime: number = input.runningTime();
@@ -97,11 +97,11 @@ namespace rikeFes_Workshop_Backhoe {
     }
 
     /**
-      * バケットを指定された時間、下げます。
+      * ブームを指定された時間、下げます。
       * @param duration 動かしたい時間
     */
-    //% block="バケットを$duration秒間さげる"
-    //% group="バケット"
+    //% block="ブームを$duration秒間さげる"
+    //% group="ブーム"
     //% duration.min=0 duration.max=15 duration.defl=5
     export function shrinkBoomCylinder(duration: number): void {
         let startTime: number = input.runningTime();
@@ -157,11 +157,11 @@ namespace rikeFes_Workshop_Backhoe {
     }
 
     /**
-      * ブームを指定された時間、上げます。
+      * バケットを指定された時間、上げます。
       * @param duration 動かしたい時間
     */
-    //% block="ブームを$duration秒間あげる"
-    //% group="ブーム"
+    //% block="バケットを$duration秒間あげる"
+    //% group="バケット"
     //% duration.min=0 duration.max=15 duration.defl=5
     export function extendBucketCylinder(duration: number): void {
         let startTime: number = input.runningTime();
@@ -177,11 +177,11 @@ namespace rikeFes_Workshop_Backhoe {
     }
 
     /**
-      * ブームを指定された時間、下げます。
+      * バケットを指定された時間、下げます。
       * @param duration 動かしたい時間
     */
-    //% block="ブームを$duration秒間さげる"
-    //% group="ブーム"
+    //% block="バケットを$duration秒間さげる"
+    //% group="バケット"
     //% duration.min=0 duration.max=15 duration.defl=5
     export function shrinkBucketCylinder(duration: number): void {
         let startTime: number = input.runningTime();
